@@ -3,7 +3,7 @@ public class Main
   public static void main(String[] args)
   {
     System.out.println(distance(3, 3, 6, 7));
-    System.out.print(quadrticFormula(1, 8, 16));
+    System.out.print(quadrticFormula(-4, 6, 2));
   }
 
   // Implement distance formula method here
@@ -29,11 +29,11 @@ public class Main
 
     String sol1 = "Solution 1: " + z + "\n";
 
-    z = (b*b) -(4*a*c);
-    z = -b - Math.sqrt(z);
-    z /= 2*a;
+    double y = (b*b) -(4*a*c);
+    y = -b - Math.sqrt(y);
+    y /= 2*a;
 
-    String sol2 = "Solution 2: " + z;
+    String sol2 = "Solution 2: " + y;
     String output = sol1 + sol2;
     return output;
   }
